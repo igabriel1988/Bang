@@ -31,7 +31,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
                 do
                     {
                             audioPlayer = try AVAudioPlayer(contentsOf: url)
-                            label.textColor = .red
+                            
                             label.text = "Bang!"
                             audioPlayer.play()
                     }
