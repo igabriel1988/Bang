@@ -13,6 +13,8 @@
 		10B40A172944447500BD5CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B40A152944447500BD5CA0 /* Main.storyboard */; };
 		10B40A192944447800BD5CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B40A182944447800BD5CA0 /* Assets.xcassets */; };
 		10B40A1C2944447800BD5CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B40A1A2944447800BD5CA0 /* LaunchScreen.storyboard */; };
+		10B40A25294444DE00BD5CA0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B40A24294444DD00BD5CA0 /* AVFoundation.framework */; };
+		10B40A282944451800BD5CA0 /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B40A272944451800BD5CA0 /* AVFAudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		10B40A182944447800BD5CA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10B40A1B2944447800BD5CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10B40A1D2944447900BD5CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10B40A24294444DD00BD5CA0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		10B40A272944451800BD5CA0 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B40A25294444DE00BD5CA0 /* AVFoundation.framework in Frameworks */,
+				10B40A282944451800BD5CA0 /* AVFAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			children = (
 				10B40A0E2944447500BD5CA0 /* Bang */,
 				10B40A0D2944447500BD5CA0 /* Products */,
+				10B40A23294444DC00BD5CA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +72,15 @@
 				10B40A1D2944447900BD5CA0 /* Info.plist */,
 			);
 			path = Bang;
+			sourceTree = "<group>";
+		};
+		10B40A23294444DC00BD5CA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10B40A272944451800BD5CA0 /* AVFAudio.framework */,
+				10B40A24294444DD00BD5CA0 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +318,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-CENTE-MAP.Bang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +349,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-CENTE-MAP.Bang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
